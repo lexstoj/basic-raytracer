@@ -97,5 +97,6 @@ for i, y in enumerate(np.linspace(screen[1], screen[3], height)):
 
         image[i, j] = np.clip(color, 0, 1)
     print("%d/%d" % (i + 1, height))
-
-plt.imsave('rtxon.png', image)
+filename = 'render.png'
+print("look for the file named", filename)
+plt.imsave(filename, image)
